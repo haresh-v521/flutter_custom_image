@@ -1,0 +1,17 @@
+name: flutter_custom_image
+description: This package is used for displaying images with assets, SVGs, and network images.
+version: 1.0.0
+repository: https://github.com/haresh-v521/flutter_custom_image.git
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+
+dev_dependencies:
+  test: ^1.24.0
+

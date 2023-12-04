@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 7.0.1-wip">
+  <meta name="description" content="flutter_custom_image API docs, for the Dart programming language.">
+  <title>flutter_custom_image - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">flutter_custom_image package</li>
+  </ol>
+  <div class="self-name">flutter_custom_image</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p>👉 A versatile Flutter package for displaying images with various sources, including assets, SVGs, and<br>
+network images. The `ImageViewer` widget simplifies the integration of different image types,<br>
+providing customization options for dimensions, error handling, and border-radius.</p>
+<p><img src="https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/30a5c9c3dad26fd7d48d15f0f267064a38acd597435c05a1.png" alt=""></p>
+<p><strong>👉 Parameters</strong></p>
+<table><tbody><tr><td>imagePath&nbsp;</td><td>Path to the image, either an asset, SVG, or network URL ✅</td></tr><tr><td>imageType&nbsp;</td><td>Type of the image (ImageType.asset, ImageType.svg, ImageType.network) ✅</td></tr><tr><td>width and height&nbsp;</td><td>Dimensions of the image ❌</td></tr><tr><td>boxFit&nbsp;</td><td>BoxFit for the image ❌</td></tr><tr><td>errorIcon&nbsp;</td><td>Icon to display in case of loading errors ❌</td></tr><tr><td>imageColor&nbsp;</td><td>Color to apply to the image ❌</td></tr><tr><td>alignment&nbsp;</td><td>Alignment of the image within its container ❌&nbsp;</td></tr><tr><td><p>topLeftRadius,&nbsp;</p><p>topRightRadius,&nbsp;</p><p>bottomLeftRadius,&nbsp;</p><p>bottomRightRadius</p></td><td>Border radiius for clipping ❌</td></tr></tbody></table>
+<p>👉 <strong>Show me the code 👀</strong></p>
+<pre class="language-Dart"><code class="language-Dart">enum ImageType { asset, svg, network }
+ImageViewer(
+  imagePath: 'your_image_path',
+  imageType: ImageType.asset, // Change to your desired ImageType
+  // Add other optional parameters for customization
+)
+</code></pre>
+<pre class="language-Dart"><code class="language-Dart">class MenuExample extends StatefulWidget {
+  @override
+  _MenuExampleState createState() =&gt; _MenuExampleState();
+}
+class _MenuExampleState extends State&lt;MenuExample&gt; {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ImageViewer(
+          imagePath: 'http://via.placeholder.com/200x200',
+          imageType: ImageType.network,
+          width: 200,
+          height: 200,
+          boxFit: BoxFit.cover,
+          errorIcon: Icons.error_outline,
+          errorIconColor: Colors.blueGrey,
+          imageColor: Colors.blue,
+          alignment: Alignment.center,
+          topLeftRadius: 10,
+          topRightRadius: 20,
+          bottomLeftRadius: 30,
+          bottomRightRadius: 40,
+        ),
+      ),
+    );
+  }
+}
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="flutter_custom_image">
+  <span class="name"><a href="flutter_custom_image/flutter_custom_image-library.html">flutter_custom_image</a></span> 
+
+</dt>
+<dd>Support for doing something awesome.
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li class="self-crumb">flutter_custom_image package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">flutter_custom_image</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="flutter_custom_image/flutter_custom_image-library.html">flutter_custom_image</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    flutter_custom_image
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

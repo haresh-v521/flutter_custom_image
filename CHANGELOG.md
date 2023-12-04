@@ -1,3 +1,6 @@
+## 1.0.2
+- add comments.
+
 ## 1.0.1
 - add doc file.
 
